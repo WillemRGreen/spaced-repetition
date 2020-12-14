@@ -1,0 +1,13 @@
+.LoginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media all and (min-width:800px){
+    .LoginForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,19 @@
+.Label {
+    display: block;
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+
+.Input {
+    font-size: 14px;
+    padding: 8px;
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.Teaxtarea {
+    font-size: 14px;
+    padding: 8px;
+}

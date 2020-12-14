@@ -1,0 +1,18 @@
+h1 {
+    text-align:center;
+}
+a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #172A3A;
+    font-weight: bold;
+}
+
+a:hover {
+    text-shadow: 3px 3px #172A3A;
+}
+
+.nav {
+    display: block;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+.subtitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-shadow: 2px 2px #172A3A;
+}
+
+.register-section {
+    display:block;
+    flex-direction:column;
+    text-align: center;
+}

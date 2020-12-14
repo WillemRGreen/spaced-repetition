@@ -1,0 +1,15 @@
+.Button {
+    box-shadow: 3px 4px 0px 0px #172A3A;
+    background:linear-gradient(to bottom, #74B3CE 5%, #508991 100%);
+    background-color:#558F99;
+    border-radius:15px;
+    border:1px solid #508991;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:17px;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #5b8a3c;
+}
