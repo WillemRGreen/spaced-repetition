@@ -1,0 +1,22 @@
+.language {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #172A3A;
+    font-weight: bold;
+}
+
+.word-list {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+.ind-words {
+    margin:0 0 5px 0;
+}
+
+.dash-display {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+}

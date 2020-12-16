@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
+import DashboardDisplay from '../../components/DashboardDisplay/DashBoardDisplay'
 
 class DashboardRoute extends Component {
+
+  
+
   render() {
     return (
-      <section>
-        implement and style me
+      <section className='dashboard'>
+        <DashboardDisplay />
       </section>
     );
   }
