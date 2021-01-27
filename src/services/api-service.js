@@ -3,7 +3,7 @@ import TokenService from './token-service'
 
 const ApiService = {
     getLanguage() {
-        return fetch(`${config.API_ENDPOINT}/language`, {
+        return fetch(`${config.API_ENDPOINT}/api/language`, {
             headers: {
               'authorization': `bearer ${TokenService.getAuthToken()}`,
             },
@@ -15,7 +15,7 @@ const ApiService = {
             )
     },
     getHeadWord() {
-      return fetch(`${config.API_ENDPOINT}/language/head`, {
+      return fetch(`${config.API_ENDPOINT}/api/language/head`, {
         headers: {
           'authorization': `bearer ${TokenService.getAuthToken()}`,
         },
@@ -27,7 +27,7 @@ const ApiService = {
           )
     },
     getLinkedList() {
-      return fetch(`${config.API_ENDPOINT}/linked-words`, {
+      return fetch(`${config.API_ENDPOINT}/api/linked-words`, {
         headers: {
           'authorization': `bearer ${TokenService.getAuthToken()}`,
         },
