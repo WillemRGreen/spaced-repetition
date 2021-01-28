@@ -20,7 +20,7 @@ class LearningRoute extends Component {
 
   async componentDidMount() {
     try {
-      const response = await fetch(`${config.API_ENDPOINT}/language/head`, {
+      const response = await fetch(`${config.API_ENDPOINT}/api/language/head`, {
         headers: {
           authorization: `bearer ${TokenService.getAuthToken()}`,
         },
@@ -46,7 +46,7 @@ class LearningRoute extends Component {
     this.context.setGuess(guessWord);
     console.log(guessWord)
     try {
-      const response = await fetch(`${config.API_ENDPOINT}/language/guess`, {
+      const response = await fetch(`${config.API_ENDPOINT}/api/language/guess`, {
         method: "POST",
         headers: {
           "content-type": "application/json",
