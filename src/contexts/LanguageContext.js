@@ -27,7 +27,7 @@ export class LanguageProvider extends Component {
         words:[],
         headWord:{},
         nextWord: {},
-        totalScore: {},
+        totalScore: 0,
         currWord: {},
         guess: {},
         response: {},

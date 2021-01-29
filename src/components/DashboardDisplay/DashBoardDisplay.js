@@ -27,16 +27,30 @@ export default class DashboardDisplay extends Component {
                     error: error
                 })
             })
+        ApiService.getHeadWord()
+            .then(response => {
+                console.log(response)
+                const totalScore = response.totalScore
+                this.context.setTotalScore(totalScore)
+            })
+            .catch(error => {
+                this.setState({
+                    error: error
+                })
+            })
     }
 
     render() {
+        const totalScore = this.context.totalScore
         const language = this.context.language.name
         const words = this.context.words.map(word => {
         return <li className= 'ind-words' key={word.id} >{word.original}- correct guesses:{word.correct_count} incorrect guesses:{word.incorrect_count}</li>
+        
         })
         return (
             <div className='dash-display'>
                 <h3 className='language'>{language}</h3>
+                <h4>Your Total Score: {totalScore}</h4>
                 <ul className='word-list'>{words}</ul>
                 <Button>
                     <Link to='/learn'>
